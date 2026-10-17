@@ -39,8 +39,10 @@ qs -c rosemenu kill
 ```
 example usage in MangoWM:
 ```bash
-exec_once=qs -c rosemenu
+exec_once=qs -c rosemenu -n 
 ```
+(you have to exec_once it so it runs in daemon mode.)
+
 
 ## configuration
 config file is located at ```~/.config/rosebar/config.toml```
