@@ -1,0 +1,25 @@
+# Rosemenu: Material 3 Expressive example. Put at the top of config.toml.
+design = "md3e"            # "custom" = the old fully-configurable look (default)
+
+[md3]
+mode    = "auto"           # dark | light | auto (reads gsettings color-scheme, else dark)
+source  = "wallpaper"      # seed | wallpaper | colors
+seed    = "#6750A4"        # used by source = "seed" and as wallpaper fallback
+variant = "analogous"      # analogous | tonal-spot | vibrant | expressive | neutral | monochrome
+tint    = 2.0              # how much surfaces take the wallpaper hue (0 = grey)
+motion  = "expressive"     # expressive (springy) | standard
+icon_font = "IosevkaTerm Nerd Font Mono"   # font for the search / clear glyphs
+# wallpaper = "~/Pictures/wall.png"     # explicit path; otherwise auto-detect (awww/swww/swaybg)
+# wallpaper_cmd = "cat ~/.cache/wall"   # or a command that prints the path
+# wallpaper_poll_ms = 5000              # 0 = sample once
+
+# Palette keys set here win over the generated Material colors:
+# [colors]
+# accent = "#d0bcff"
+# selected_from = "#4a4458"
+
+# Anything in [window], [search], [list], [font], [animation] still wins over MD3 defaults:
+# [font]
+# family = "Google Sans Flex"
+# [list]
+# row_height = 56
